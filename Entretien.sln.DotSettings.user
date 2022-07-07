@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e8404e86_002D4a16_002D4c8a_002D904e_002D5e02e6fc5b1b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Recruteur peut tester le candidat" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::E2131967-A3E4-45D3-A4B1-66B6E708CD87::net6.0::Entretien.Tests.Features.PlanifierUnEntretienDeRecrutementChezSoatFeature.RecruteurPeutTesterLeCandidat&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E2131967-A3E4-45D3-A4B1-66B6E708CD87::net6.0::EntretienTest.Should_pouet&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E2131967-A3E4-45D3-A4B1-66B6E708CD87::net6.0::EntretienServiceTest.Planifier_Should_save_entretien&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E2131967-A3E4-45D3-A4B1-66B6E708CD87::net6.0::EntretienServiceTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
