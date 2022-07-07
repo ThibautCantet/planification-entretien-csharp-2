@@ -7,3 +7,10 @@ Fonctionnalité: Planifier un entretien de recrutement chez Soat
         Quand on tente une planification d’entretien
         Alors L’entretien est sauvegardé
         Et un mail de confirmation est envoyé au candidat et le recruteur
+
+
+    Scénario: Recruteur ne peut pas tester le candidat
+        Etant donné un candidat ".NET" ("candidat@email.com") avec "2" ans d’expériences qui est disponible "15/04/2019" à "15:00"
+        Et qu'un recruteur ".NET" ("recruteur@soat.fr") qui a "5" ans d’XP qui est dispo "17/04/2019" à "15:00"
+        Quand on tente une planification d’entretien
+        Alors L’entretien n est pas sauvegardé

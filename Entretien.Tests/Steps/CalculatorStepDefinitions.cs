@@ -59,5 +59,15 @@ namespace Entretien.Tests.Steps
         {
             _emailMock.Verify(service => service.SendMail(_candidat.Email, _recruteur.Email));
         }
+
+       
+
+        [Then(@"L’entretien n est pas sauvegardé")]
+        public void ThenLEntretienNEstPasSauvegarde()
+        {
+            var entretiens = _entretienRepository.FindAll();
+            Assert.Equal( 0, entretiens.Count);
+
+        }
     }
 }

@@ -14,8 +14,12 @@ public class EntretienService
 
     public void Planifier(Candidat candidat, Recruteur recruteur)
     {
-        _entretienRepository.Save(new Entretien(candidat, recruteur));
-        
-        _emailService.SendMail(candidat.Email, recruteur.Email);
+        if (candidat.Date == recruteur.Date)
+        {
+            _entretienRepository.Save(new Entretien(candidat, recruteur));
+
+            _emailService.SendMail(candidat.Email, recruteur.Email);
+        }
+       
     }
 }
