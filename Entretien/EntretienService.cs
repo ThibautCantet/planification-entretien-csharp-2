@@ -14,12 +14,12 @@ public class EntretienService
 
     public void Planifier(Candidat candidat, Recruteur recruteur)
     {
-        if (candidat.Date == recruteur.Date)
+        if (candidat.Date == recruteur.Date && candidat.Xp < recruteur.Xp)
         {
             _entretienRepository.Save(new Entretien(candidat, recruteur));
 
             _emailService.SendMail(candidat.Email, recruteur.Email);
         }
-       
+
     }
 }

@@ -129,15 +129,15 @@ namespace Entretien.Tests.Features
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Recruteur ne peut pas tester le candidat")]
+        [Xunit.SkippableFactAttribute(DisplayName="Recruteur ne peut pas tester le candidat candidat pas disponible")]
         [Xunit.TraitAttribute("FeatureTitle", "Planifier un entretien de recrutement chez Soat")]
-        [Xunit.TraitAttribute("Description", "Recruteur ne peut pas tester le candidat")]
-        public virtual void RecruteurNePeutPasTesterLeCandidat()
+        [Xunit.TraitAttribute("Description", "Recruteur ne peut pas tester le candidat candidat pas disponible")]
+        public virtual void RecruteurNePeutPasTesterLeCandidatCandidatPasDisponible()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Recruteur ne peut pas tester le candidat", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 12
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Recruteur ne peut pas tester le candidat candidat pas disponible", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 11
     this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -157,18 +157,113 @@ namespace Entretien.Tests.Features
             else
             {
                 this.ScenarioStart();
-#line 13
+#line 12
         testRunner.Given("un candidat \".NET\" (\"candidat@email.com\") avec \"2\" ans d’expériences qui est disp" +
                         "onible \"15/04/2019\" à \"15:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
 #line hidden
-#line 14
+#line 13
         testRunner.And("un recruteur \".NET\" (\"recruteur@soat.fr\") qui a \"5\" ans d’XP qui est dispo \"17/04" +
                         "/2019\" à \"15:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et qu\'");
 #line hidden
-#line 15
+#line 14
         testRunner.When("on tente une planification d’entretien", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
 #line hidden
-#line 16
+#line 15
+        testRunner.Then("L’entretien n est pas sauvegardé", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Alors ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Recruteur ne peut pas tester le candidat candidat a plus d experience")]
+        [Xunit.TraitAttribute("FeatureTitle", "Planifier un entretien de recrutement chez Soat")]
+        [Xunit.TraitAttribute("Description", "Recruteur ne peut pas tester le candidat candidat a plus d experience")]
+        public virtual void RecruteurNePeutPasTesterLeCandidatCandidatAPlusDExperience()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Recruteur ne peut pas tester le candidat candidat a plus d experience", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 17
+    this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 18
+        testRunner.Given("un candidat \".NET\" (\"candidat@email.com\") avec \"7\" ans d’expériences qui est disp" +
+                        "onible \"15/04/2019\" à \"15:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+#line hidden
+#line 19
+        testRunner.And("un recruteur \".NET\" (\"recruteur@soat.fr\") qui a \"5\" ans d’XP qui est dispo \"15/04" +
+                        "/2019\" à \"15:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et qu\'");
+#line hidden
+#line 20
+        testRunner.When("on tente une planification d’entretien", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
+#line hidden
+#line 21
+        testRunner.Then("L’entretien n est pas sauvegardé", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Alors ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Recruteur ne peut pas tester le candidat candidat a plus d experience et pas disp" +
+            "onible")]
+        [Xunit.TraitAttribute("FeatureTitle", "Planifier un entretien de recrutement chez Soat")]
+        [Xunit.TraitAttribute("Description", "Recruteur ne peut pas tester le candidat candidat a plus d experience et pas disp" +
+            "onible")]
+        public virtual void RecruteurNePeutPasTesterLeCandidatCandidatAPlusDExperienceEtPasDisponible()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Recruteur ne peut pas tester le candidat candidat a plus d experience et pas disp" +
+                    "onible", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 23
+     this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 24
+        testRunner.Given("un candidat \".NET\" (\"candidat@email.com\") avec \"7\" ans d’expériences qui est disp" +
+                        "onible \"15/04/2019\" à \"15:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Etant donné ");
+#line hidden
+#line 25
+        testRunner.And("un recruteur \".NET\" (\"recruteur@soat.fr\") qui a \"5\" ans d’XP qui est dispo \"17/04" +
+                        "/2019\" à \"15:00\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Et qu\'");
+#line hidden
+#line 26
+        testRunner.When("on tente une planification d’entretien", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Quand ");
+#line hidden
+#line 27
         testRunner.Then("L’entretien n est pas sauvegardé", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Alors ");
 #line hidden
             }
